@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocos.com</title>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!---<link rel="stylesheet" href="style.css">--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*---------------------CSS var---------------------------*/
+:root {
+    --navbar-height: 59px;
+}
+
+/*--------------------------navigation bar--------------------------*/
+#navbar {
+    display: flex;
+    align-items: center;
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+/*--------------------logo and img------------------------------*/
+#logo {
+    margin: 25px 30px;
+}
+
+#logo h2{
+    font-size: 1.8rem;
+    margin-top: -25px;
+    color: rgb(26, 110, 26);
+}
+
+#logo img {
+    width: 89px;
+    height: 76px;
+    padding: 1px;
+    border-radius: 72px;
+    margin-top: -32px;
+}
+
+/*--------------------------navbar list styleing--------------------*/
+#navbar {
+    position: absolute;
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    color: white;
+    list-style: none;
+    font-size: 1.1rem;
+
+}
+
+#navbar ul li a {
+    color: rgb(14, 14, 105);
+    display: block;
+    padding: 1px;
+    margin: 16px;
+    float: right;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a:hover {
+   /* background-color: white;*/
+    color: white;
+    background: rgb(9, 139, 9);
+    border-radius: 5px;
+    padding: 4px 6px;
+    
+}
+
+
+/*--------------------Home section----------------------------*/
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    padding: 3px 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    margin: -7rem 4rem;
+margin-top: -296px;
+margin-left: 685px;
+height: 26rem;
+border-radius: 10px;
+width: 37rem;
+padding: 0px;
+}
+
+#home::before {
+    content: "";
+    background: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+
+}
+
+#home h1 {
+    color: rgb(26, 110, 26);
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 246px;
+    margin-left: -668px;
+    font-size: 3.2rem;
+    padding-bottom: 179px;
+
+}
+
+#home p strong{
+      color:rgb(14, 14, 105) ;
+      font-size: 2.1rem;
+      margin-left: -32px;
+}
+
+#home p {
+    color: rgb(70, 67, 67);
+text-align: center;
+font-size: 1.2rem;
+font-family: 'Nunito', sans-serif;
+margin-left: -651px;
+padding-bottom: 22px;
+margin-top: -420px;
+}
+
+.buttonn{
+    width: 106px;
+height: 37px;
+margin: 5px;
+margin-left: -689px;
+border: 1px solid rgb(81, 230, 106);
+border-radius: 5px;
+background: rgb(81, 230, 106);
+font-size: 1rem;
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+}
+
+.buttonn:hover{
+    background-color: rgb(5, 128, 5);
+    color: white;
+}
+
+
+
+/* ---------------------------------------  About us section------------------------------------ */
+.about {
+    display: flex;
+    background: white;
+}
+
+.about img {
+    margin: 0rem 1rem;
+height: 17rem;
+border-radius: 0px;
+width: 49rem;
+padding: 0px;
+}
+
+main .para p {
+    margin-left: 816px;
+margin-top: -214px;
+font-family: 'Nunito', sans-serif;
+font-size: 1.3rem;
+display: flex;
+align-items: center;
+width: 529px;
+margin-bottom: 121px;
+color: rgb(70, 67, 67);
+}
+
+.aboutt{
+    font-size: 2.3rem;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(14, 14, 105) ;
+    margin-top: -86px;
+}
+
+
+/* --------------------------Our catagory section------------- */
+
+.container {
+
+    display: flex;
+    margin: 0rem 3rem;
+
+
+}
+
+.cards {
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.cards:hover {
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.7s ease;
+    border: none;
+}
+
+.cards img {
+
+    display: block;
+    height: 224px;
+    width: 205px;
+    margin: 20px 40px;
+
+
+}
+
+h1 {
+    font-size: 2.3rem;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(14, 14, 105) ;
+    margin-top: 43px;
+}
+
+h2 {
+
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(26, 110, 26) ;
+}
+
+.container div p {
+    margin: 20px 10px;
+    color: rgb(70, 67, 67);
+    font-size: 1.3rem;
+}
+
+.buttons{
+    width: 106px;
+height: 37px;
+margin: 10px;
+border: 1px solid rgb(81, 230, 106);
+border-radius: 5px;
+background: rgb(81, 230, 106);
+font-size: 1rem;
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+
+}
+
+.buttons:hover{
+    background-color: rgb(5, 128, 5);
+    color: white;
+}
+
+/*--------------------------------Products section----------------------------*/
+#products {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    float: left;
+    /*background: url(https://media.istockphoto.com/photos/abstract-blur-beautiful-pink-color-background-with-bokeh-light-party-picture-id1075343832?b=1&k=20&m=1075343832&s=170667a&w=0&h=YJ0OmLeAU4Z2__BoIji7VmvnAl-GVjFbTo93esZ1Ouo=)no-repeat center center/cover;*/
+
+}
+
+.box {
+
+    padding-top: 0px;
+    margin: 10px;
+    height: 160px;
+    width: 423px;
+    border-radius: 10px;
+}
+
+#products .box img {
+    height: 150px;
+    width: 161px;
+    display: block;
+    padding: 6px;
+    border-radius: 150px;
+
+}
+
+#products .box p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    justify-content: flex-end;
+    float: right;
+    width: 190px;
+    padding: 10px;
+    position: relative;
+    top: -146%;
+}
+
+.box:hover {
+    /*color:rgb(187, 28, 55);*/
+    background-color: white;
+    color: rgb(30, 48, 131);
+    cursor: pointer;
+    
+}
+
+.h-secondary center{
+    text-decoration: none;
+}
+
+
+p {
+    margin-top: 5px;
+    color: rgb(88, 85, 85);
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* --------------------------------   styling of form----------------------------------------------- */
+form {
+    background: url(https://c8.alamy.com/comp/2BN6Y3E/fruits-and-vegetables-frame-on-white-2BN6Y3E.jpg) no-repeat center center/cover;
+    height: 80%;
+    width: 100%;
+
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 50px;
+
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 16px 0px;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 270px;
+    border: 2px solid rgb(182, 178, 178);
+
+}
+
+.text {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(27, 107, 27);
+    font-weight: 900;
+    padding: 10px;
+
+}
+
+.formm{
+    font-size: 2.3rem;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(14, 14, 105) ;
+    margin-top: -19px;
+padding-bottom: 36px;
+}
+.input{
+    padding-left: 78px;
+    margin: 6px;
+    margin-bottom: -17px;
+}
+#mobilee{
+    margin-left: -46px;
+}
+#msg{
+    margin-left: -40px;
+}
+
+/* -------------------positioning name and mobile no rows------------ */
+#name {
+    margin-top: 10px;
+  margin-left: 12px;
+}
+
+
+#mobile {
+    margin-left: 39px;
+    padding-left: 3px;
+}
+
+/* ------------------------button styling----------------- */
+.btn {
+    margin: 14px 35px 35px 643px;
+width: 125px;
+padding: 8px;
+background-color: rgb(81, 230, 106);
+border: 1px solid rgb(81, 230, 106);
+color: black;
+font-weight: 700;
+font-size: 1.1rem;
+font-family: 'Nunito', sans-serif;
+}
+
+
+.btn:hover {
+    background-color: rgb(5, 128, 5);
+    color: white;
+}
+
+/*-------------------social media------------------------*/
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 200px;
+    height: 20px;
+    width: 21px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 150px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.8;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: rgb(14, 14, 105);
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: rgb(14, 14, 105);
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: rgb(14, 14, 105);
+    color: white;
+}
+
+/* Linkedin */
+.fa-linkedin {
+    background: rgb(14, 14, 105);
+    color: white;
+}
+
+/* Pinterest */
+.fa-pinterest {
+    background: rgb(14, 14, 105);
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*--------------------------location and contact--------------------------*/
+#loc {
+    margin: 10px;
+    display: flex;
+    background: rgb(120, 255, 120);
+    width: 100%;
+    height: 100%;
+}
+
+#loc .boxs {
+
+    padding: 6px;
+    margin: 2px;
+    margin-left: 250px;
+    border-radius: 19px;
+    align-items: center;
+    justify-content: center;
+    width: 660px;
+
+}
+
+#loc .boxs img {
+    height: 40px;
+    margin-right: 50px;
+    display: block;
+    padding: 6px;
+    border-radius: 100px;
+}
+
+#loc .boxs p {
+    font-family: 'Nunito', sans-serif;
+    top: -20px;
+    font-size: 1.1rem;
+
+}
+
+.h-secondarys {
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+
+/* ------------------------------------- styling of footer------------------------------------------- */
+footer {
+    background-color: rgb(53, 185, 53);
+    color: rgb(255, 255, 255);
+    height: 2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/*---------------------------- utility class----------------------------------*/
+.h-primary {
+    font-size: 2.3rem;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(14, 14, 105) ;
+    margin-top: 33px;
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    margin-bottom: -8px;
+    text-align: right;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    top: -84%;
+    padding-right: 62px;
+
+}
+/* ------------------------cart buttons--------------------- */
+.buttonx {
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    width: 127px;
+    padding: 8px;
+    margin: 130px 10px 34px 225px;
+    position: relative;
+    top: -146%;
+    border-radius: 5px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 900;
+    background-color: rgb(81, 230, 106);
+    border: 1px solid rgb(81, 230, 106);
+
+}
+
+.buttonx:hover {
+    background-color: rgb(5, 128, 5);
+    color: white;
+
+}
+
+#rate{
+    font-size: 1rem;
+    color: rgb(75, 72, 72);
+    margin-top: -20px;
+}
+
+#star{
+    color: orange;
+    margin-right: -14px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- ----------------------------NAVBAR AND LOGO SECTION---------------------------- -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://media.istockphoto.com/vectors/farmer-products-icon-vector-id1179403032?k=20&m=1179403032&s=612x612&w=0&h=cDkWIZSUhbctOMIpMHvEBaXenjMoyqByWdEcxzgaCmU="
+                alt="Grocos.com">
+            <h2>Grocos</h2>    
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#about us">About us</a></li>
+            <li class="item"><a href="#our catagory">Catagory</a></li>
+            <li class="item"><a href="#our products">Products</a></li>
+            <li class="item"><a href="#order form">Order</a></li>
+        </ul>
+    </nav>
+    <!-- ----------------------------HOME SECTION---------------------------- -->
+    <section id="home">
+        <h1 class="h-primary">Organic and Fresh!</h1>
+        <p><strong>Fruits and Vegetables</strong><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Quaerat, modi provident maiores tempore<br> perferendis alias?</p>
+        <img src="https://www.kindpng.com/picc/m/217-2178136_fruit-vegetables-delivery-app-hd-png-download.png"> 
+        <button class="buttonn">Order Now</button>   
+    </section>
+
+    <!-- ----------------------------ABOUT US SECTION---------------------------- -->
+    <div class="aboutus" id="about us">
+
+        <div class="headings">
+            <h1 class="aboutt">About Us</h1>
+        </div>
+        <main class="about">
+
+
+            <img src="https://www.packagingconnections.com/sites/default/files/ARP_Banner_herb-tray_1920x680_low%20%281%29.jpg" alt="" class="imgcake">
+            <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla non nihil, optio natus sed dignissimos corporis veritatis repellat harum obcaecati amet rem<br> iste libero iure!
+            </p>
+
+        </main>
+    </div>
+
+    <!-- ----------------------   OUR catagory SECTION------------------------ -->
+    <div class="headings" id="our catagory">
+        <h1>Catagory</h1>
+    </div>
+    <section class="container">
+        <div class="cards">
+            <div class="image"><img
+                    src="https://www.flowershop.ph/images/thumbnails/500/500/detailed/3/fruit-basket-01_n7xf-y2.jpg">
+            </div>
+            <h2>Fruits</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, odit!</p>
+            <a href="#">
+                <button class="buttons">View More</button>
+            </a>
+        </div>
+
+        <div class="cards">
+            <div class="image"><img
+                    src="https://farmerjoesfoods.com/wp-content/uploads/2019/09/basket-of-vegetables.jpg"
+                    alt=""></div>
+            <h2>Vegetables</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iure?</p>
+            <a href="#">
+                <button class="buttons">View More</button>
+            </a>
+        </div>
+
+        <div class="cards">
+            <div class="image"><img
+                    src="https://st.depositphotos.com/1868949/4285/i/950/depositphotos_42850719-stock-photo-mixed-vegetable-in-basket.jpg"
+                    alt=""></div>
+            <h2>Leafy Vegetables</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, earum!</p>
+            <a href="#">
+                <button class="buttons">View More</button>
+            </a>
+        </div>
+
+        <div class="cards">
+            <div class="image"><img
+                    src="https://thumbs.dreamstime.com/b/fresh-dairy-products-isolated-white-background-cheese-milk-butter-156663103.jpg"
+                    alt=""></div>
+            <h2>Dairy Products</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sed.</p>
+            <a href="#">
+                <button class="buttons">View More</button>
+            </a> 
+        </div>
+
+    </section>
+    <!-- ----------------------------OUR PRODUCTS SECTION---------------------------- -->
+    <section class="products-container" id="our products">
+        <h1 class="h-primary">Our Products</h1>
+
+        <div id="products">
+            <div class="box" id="column">
+                
+                    <img src="https://image.shutterstock.com/image-photo/bunch-spinach-leaves-on-isolated-260nw-237622099.jpg"
+                        alt="">
+                    <h2 class="h-secondary center "> Spinach: Rs.10 </h2>
+                    <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 4.7 </h2>
+                <a href="spinach.html">
+                <button class="buttonx"> View More</button>
+                </a>
+            </div>
+
+            
+            <div class="box" id="column">
+                
+                <img src="https://item-cdn.qzimages.com/536452_5ebc1866d88fa.jpg?x-oss-process=style/mall-gallery"
+                    alt="">
+
+                <h2 class="h-secondary center item"> Okra: Rs.30 </h2>
+                <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 4.9 </h2>
+            <a href="okra.html">
+            <button class="buttonx"> View More</button>
+            </a>
+        </div>
+
+
+            <div class="box" id="column">
+                
+                <img src="https://torange.biz/photo/35/HD/pumpkin-cut-slice-white-background-piece-35615.jpg"
+                    alt="">
+                <h2 class="h-secondary center">Pumpkin: Rs.40 </h2>
+                <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 4.4 </h2>
+                <a href="pumpkin.html">
+                    <button class="buttonx">View More</button>
+                </a>
+            </div>
+
+            <div class="box" id="column">
+                
+                <img src="https://static9.depositphotos.com/1642482/1148/i/600/depositphotos_11489545-stock-photo-apple-fruit.jpg"
+                    alt="">
+                <h2 class="h-secondary center">Apples: Rs.120</h2>
+                <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 5.0 </h2>
+            <a href="apples.html">
+            <button class="buttonx">View More</button>
+            </a>
+            
+            </div>
+
+            <div class="box" id="column">
+                
+                <img src="https://5.imimg.com/data5/ML/KC/IA/SELLER-12996491/mango-fruit-500x500.jpg"
+                    alt="">
+                <h2 class="h-secondary center">Mangoes: Rs.1000</h2>
+                <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 4.8 </h2>
+                <a href="mangoes.html">  
+                <button class="buttonx">View More</button>
+                </a>
+            </div>
+            <div class="box" id="column">
+                
+                <img src="https://static.vecteezy.com/system/resources/previews/004/184/284/large_2x/kiwi-fruit-on-a-white-background-photo.jpg" alt="">
+                <h2 class="h-secondary center">Kiwi: Rs.250</h2>
+                <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 3.9 </h2>
+            <a href="kiwi.html">
+            <button class="buttonx">View More</button>
+            </a>
+            
+            </div>
+
+            <div class="box" id="column">
+               
+                <img src="https://previews.123rf.com/images/lubastock/lubastock1203/lubastock120300330/12908504-fresh-cauliflower-isolated-on-white-background.jpg"
+                    alt="">
+                <h2 class="h-secondary center">Cauliflower: Rs.45</h2>
+                <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 4.7 </h2>
+            <a href="cauliflower.html">
+            <button class="buttonx">View More</button>
+            </a>
+            
+            </div>
+
+            <div class="box" id="column">
+                
+                <img src="https://i.pinimg.com/originals/fe/11/5e/fe115eac9a67f8a65a3ad26b2de82f5a.jpg"
+                    alt="">
+                <h2 class="h-secondary center">Broccoli: Rs.90</h2>
+                <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 4.3 </h2>
+            <a href="broccoli.html">
+            <button class="buttonx">View More</button>
+            </a>
+        
+        </div>
+
+            <div class="box" id="column">
+                
+                <img src="https://5.imimg.com/data5/SELLER/Default/2020/10/EV/PV/CS/93290190/chinese-cabbage-500x500.jpg" alt="">
+                <h2 class="h-secondary center">Lettuce: Rs.170</h2>
+                <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 4.9 </h2>
+            <a href="lettuce.html"> 
+            <button class="buttonx">View More</button>
+            </a>
+        </div>
+
+        <div class="box" id="column">
+                
+            <img src="https://st2.depositphotos.com/1028911/5625/i/600/depositphotos_56257637-stock-photo-3d-milk-carton-box-isolated.jpg"
+                alt="">
+            <h2 class="h-secondary center">Milk: Rs.70</h2>
+            <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 5.0 </h2>
+        <a href="milk.html">
+        <button class="buttonx">View More</button>
+        </a>
+    
+    </div>
+
+    <div class="box" id="column">
+                
+        <img src="https://www.pngitem.com/pimgs/m/196-1962499_new-dana-cheddar-cheese-slices-come-individually-wrapped.png"
+            alt="">
+        <h2 class="h-secondary center">Cheese: Rs.200</h2>
+        <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 4.6 </h2>
+    <a href="cheese.html">
+    <button class="buttonx">View More</button>
+    </a>
+
+</div>
+
+<div class="box" id="column">
+                
+    <img src="https://media.istockphoto.com/photos/six-eggs-picture-id518903458?k=20&m=518903458&s=170667a&w=0&h=J93oemyMxnYJN-F29AWDbd7Yn_XT8T7A4_fyGuF_Ils="
+        alt="">
+    <h2 class="h-secondary center">Eggs: Rs.55</h2>
+    <h2 class="h-secondary center " id="rate"><span class="fa fa-star checked" id="star"></span> 4.4 </h2>
+<a href="eggs.html">
+<button class="buttonx">View More</button>
+</a>
+
+</div>
+
+        </div>
+    </section>
+    <!-- ----------------------------Deals SECTION---------------------------- -->
+    <section id="home">
+        <h1 class="h-primary">Deals Of The Week!!</h1>
+        <p><strong>Upto 50% Off on Fruits and Vegetables</strong><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Quaerat, modi provident maiores tempore<br> perferendis alias?</p>
+        <img src="https://media.istockphoto.com/photos/various-fruits-and-vegetables-forming-heart-shape-picture-id452993147?k=20&m=452993147&s=170667a&w=0&h=OfXL2lAUjKr7cOXkLu8Xq5FTwd_sHWVOHbEPz2Hf74M=">    
+    </section>
+
+    <!-- -------------------ORDER FORM----------------------------------------- -->
+
+    <div class="headings" id="order form">
+        <h1 class="formm">Order Your Grocery</h1>
+    </div>
+    <section class="order" id="order">
+        <form action="">
+            <div class="inputBox">
+                <div class="input">
+                    <span class="text" id="name">Name:</span>
+                    <input type="text" id="namee" placeholder="Enter your name">
+                </div>
+                <div class="input">
+                    <span class="text" n>Email Address:</span>
+                    <input type="email" id="emaill" placeholder="Enter your Email Address">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span class="text">Product Name:</span>
+                    <input type="text" id="productt" placeholder="Enter name of Product">
+                </div>
+                <div class="input">
+                    <span class="text" id="mobile">Mobile No:</span>
+                    <input type="test" id="mobilee" placeholder="Enter your mobile no.">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span class="text">Item in KG:</span>
+                    <input type="number" id="itemm" placeholder="How many KG item">
+                </div>
+                <div class="input">
+                    <span class="text">Date and Time:</span>
+                    <input type="datetime-local" id="date">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span class="text">Your Address</span>
+                    <input type="text" id="addresss" placeholder="Enter your Address">
+                </div>
+                <div class="input">
+                    <span class="text">Your Message</span>
+                    <input type="text" id="msg" placeholder="Enter your Message">
+                </div>
+            </div>
+            <input type="submit" value="Order Now" class="btn">
+        </form>
+    </section>
+
+    <!---------------------------SOCIAL MEDIA--------------------------------->
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add font awesome icons -->
+    <div class="social"><a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+    </div>
+
+    <!---------------------------------LOCATION AND CONTACT----------------------------------------->
+    <section class="loc-container">
+        <div id="loc">
+            <div class="boxs">
+                <img src="https://png.pngtree.com/png-vector/20190215/ourlarge/pngtree-vector-location-icon-png-image_515424.jpg"
+                    alt="">
+                <h2 class="h-secondarys center">Location</h2>
+                <p class="center">4736 Santori Lane, Milano<br>
+                    Center,FC Road Pune-411067</p>
+            </div>
+            <div class="boxs">
+                <img src="https://www.pinclipart.com/picdir/middle/451-4513778_contact-us-icon-png-clipart.png" alt="">
+                <h2 class="h-secondarys center">Contact</h2>
+                <p class="center">9175935770<br>
+                    grocos.kart21@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------FOOTER ----------------------------------------------- -->
+    <footer>
+        <p>Copywrite &copy; www.Grocos.com. All rights reserved!</p>
+    </footer>
+
+</body>
+
+</html>

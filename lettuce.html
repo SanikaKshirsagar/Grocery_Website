@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lettuce</title>
+    <link
+    href="https://image.shutterstock.com/image-photo/bunch-spinach-leaves-on-isolated-260nw-237622099.jpg"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <style>
+
+        .about {
+            display: flex;
+            background-color: white;           
+            justify-content: space-evenly;
+        }
+
+        .flexcol {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .productimg {
+            margin: 4rem 4rem;
+            height: 21rem;
+            border-radius: 10px;
+            width: 27rem;
+            padding: 0px;
+        }
+
+        .h-primary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: rgb(14, 14, 105);
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .h-secondary {
+            margin: 24px 10px 14px 159px;
+            font-size: 2rem;
+
+        }
+
+        .grocerydetails {
+
+            font-size: 1.2rem;
+            margin: 0px 0px 0px 134px;
+            color: rgb(26, 110, 26);
+            font-weight: 600;
+            font-family: 'Nunito', sans-serif;
+
+
+        }
+
+        .grocerydetails .name{
+            font-size: 1.6rem;
+            margin: 0px 0px 0px 134px;
+            color: rgb(7, 44, 7);
+            font-weight: 600;
+            font-family: 'Nunito', sans-serif;
+            margin-left: 0px;
+        }
+
+        .grocerydetails .tax{
+            font-size: 1rem;
+            margin: 0px 0px 0px 134px;
+            color: rgb(71, 69, 69);
+            font-weight: 600;
+            font-family: 'Nunito', sans-serif;
+            margin-left: 0px;
+        }
+
+        .grocerydetails .save{
+            font-size: 1.2rem;
+            margin: 0px 0px 0px 134px;
+            color: rgb(204, 12, 12);
+            font-weight: 600;
+            font-family: 'Nunito', sans-serif;
+            margin-left: 0px;
+        }
+
+        .grocerydetails .price{
+            font-size: 1.6rem;
+            margin: 0px 0px 0px 134px;
+            color: rgb(7, 44, 7);
+            font-weight: 600;
+            font-family: 'Nunito', sans-serif;
+            margin-left: 0px;
+
+        }
+
+
+        .addtocart {
+            
+            height: 2.4rem;
+width: 8rem;
+margin: 15px 0px 15px 180px;
+font-size: 1rem;
+border-radius: 5px;
+font-weight: 600;
+font-family: 'Nunito', sans-serif;
+background: rgb(81, 230, 106);
+border: 1px solid rgb(81, 230, 106);
+            
+        }
+        .addtocart:hover{
+            background-color: rgb(5, 128, 5);
+            color: white;
+        }
+
+        .note{
+            color: rgb(77, 74, 74);
+            font-family: 'Nunito', sans-serif ;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aboutus" id="about us">
+
+        <div class="h-primary ">
+            <h1 class="h-primary">Lettuce</h1>
+        </div>
+        <main class="about">
+
+            <img src="https://5.imimg.com/data5/SELLER/Default/2020/10/EV/PV/CS/93290190/chinese-cabbage-500x500.jpg"
+                alt="" class="productimg">
+            <div class="flexcol">
+                <div class="description">
+                    <h1 class="h-primary">Product Details</h1>
+                    
+
+                    <ul class="grocerydetails" style="list-style-type:none;">
+                        <li class="name">Iceberg Lettuce</li>
+                        <li>MRP: Rs.340</li>
+                        <li>On Grocos: Rs.170 per bundle</li>
+                        <li class="tax">(Inclusive of all taxes)</li>
+                        <li class="save">You save: 50%</li>
+                        <li class="price"><strong>Price: Rs 170</strong></li>
+                        <input type="number" placeholder="Item in KG">
+                    </ul>
+
+                    <a href="cart.html">
+                    <button class="addtocart">
+                        ADD TO CART
+                    </button>
+                    </a>
+
+                </div>
+                <div class="note">Please Note:
+                    All the Grocery is delivered directly from the Farm!<br>
+                    Country of Origin: India</div>
+            </div>
+
+
+        </main>
+    </div>
+</body>
+
+</html>
